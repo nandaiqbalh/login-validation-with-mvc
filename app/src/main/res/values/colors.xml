@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="font_nama">#31344C</color>
+
+    <color name="primary_blue">#40BFFF</color>
+    <color name="dark_blue">#3494D1</color>
+    <color name="neutral_grey">#9098B1</color>
+    <color name="light">#EBF0FF</color>
+    <color name="neutral_color">#FAFAFA</color>
+    <color name="neutral_dark">#223263</color>
+    <color name="primary_red">#FB7181</color>
+
+    <color name="nav_bar_color">#D6FFFC</color>
 </resources>

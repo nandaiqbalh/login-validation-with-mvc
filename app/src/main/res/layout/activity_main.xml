@@ -6,13 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Login Validation\nwith MVC Architecture Pattern"
+            android:textAlignment="center"
+            android:textColor="@color/font_nama"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_input"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/font_nama"
+            android:textColorHint="@color/neutral_grey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_password_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_input"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/font_nama"
+            android:textColorHint="@color/neutral_grey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_errortext_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/primary_red"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
